@@ -24,7 +24,9 @@ namespace ZeusUT
         [TestMethod]
         public void TestMethod2()
         {
-
+            //Test part list read method
+            var parts = CarPart.ReadPartsFile();
+            CarPart.WritePartsFile(Constants.DataFolderPath + "Newlistparts.csv", parts);
 
         }
     }
